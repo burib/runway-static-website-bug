@@ -1,0 +1,33 @@
+---
+# See full syntax at https://docs.onica.com/projects/runway/en/latest/
+deployments:
+  - name: ui-in-north-virginia
+    modules:
+      - path: ui
+        type: static
+        environments:
+          dev: true
+        options:
+          build_steps:
+            - npm run build
+          build_output: dist/ui
+        parameters:
+          namespace: runway-in-north-virginia
+          staticsite_cf_disable: true
+    regions:
+      - us-east-1
+  - name: ui-in-ireland
+    modules:
+      - path: ui
+        type: static
+        environments:
+          dev: true
+        options:
+          build_steps:
+            - npm run build
+          build_output: dist/ui
+        parameters:
+          namespace: runway-in-ireland
+          staticsite_cf_disable: true
+    regions:
+      - eu-west-1

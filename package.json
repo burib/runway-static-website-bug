@@ -1,0 +1,16 @@
+{
+  "name": "runway-staticsite-region-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "destroy": "env DEPLOY_ENVIRONMENT=dev npx runway destroy",
+    "deploy": "env DEPLOY_ENVIRONMENT=dev npx runway deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@onica/runway": "^1.11.3"
+  }
+}
