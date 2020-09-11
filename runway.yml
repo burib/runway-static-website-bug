@@ -13,7 +13,7 @@ deployments:
           build_output: dist/ui
         parameters:
           namespace: runway-in-north-virginia
-          staticsite_cf_disable: true
+          staticsite_cf_disable: false
     regions:
       - us-east-1
   - name: ui-in-ireland
@@ -28,6 +28,6 @@ deployments:
           build_output: dist/ui
         parameters:
           namespace: runway-in-ireland
-          staticsite_cf_disable: true
+          staticsite_cf_disable: false
     regions:
       - eu-west-1
