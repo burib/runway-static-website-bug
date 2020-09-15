@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@onica/runway": "^1.11.3"
+    "@onica/runway": "1.13.0"
   }
 }
